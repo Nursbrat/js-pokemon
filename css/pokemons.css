@@ -1,0 +1,37 @@
+
+.pokemons{
+  margin-top: 20px;
+}
+
+.pokemons__content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+}
+.pokemons h2{
+  font-size: 50px;
+  padding-left: 100px;
+}
+.pokemon__box {
+  margin: 10px;
+  width: 250px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 1px;
+}
+.pokemon__box img {
+  margin: 10px 0;
+  object-fit: cover;
+  width: 90%;
+}
+.pokemon__name {
+  font-size: 1.4rem;
+  margin: 5px auto;
+}
+.pokemon__data{
+    margin:5px auto
+}
+.pokemon__box p {
+  margin: 5px auto;
+}

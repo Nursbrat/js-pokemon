@@ -1,0 +1,16 @@
+.loader{
+    display: none;
+}
+.visible{
+    display: block;
+}
+
+.loader__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.loader path,
+.loaderrect{
+  fill: #FF6700;
+}

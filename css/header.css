@@ -1,0 +1,11 @@
+.header__lists {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 16px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 30px;
+}
