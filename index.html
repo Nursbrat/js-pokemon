@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedox</title>
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer type="module" src="./app.js" ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <header class="header">
+          <nav class="header__nav">
+            <ul class="header__lists">
+              <li class="header__list">
+                <a href="index.html" class="header__link logo">
+                  <img src="./assets/svg/logo.svg" alt="logo.img" />
+                  <h2>POKEMON</h2>
+                </a>
+              </li>
+
+              <li class="header__list">
+                <a href="./pages/favourites.html" class="header__link"
+                  >Favourites</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <section class="actions">
+            <div class="actions__content">
+              <form class="actions__search">
+                <input type="text" name="actions__input" id="actions__input" />
+                <button class="action__btn">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+
+              <select class="actions__sort">
+                <option value="lowest">Lowest Number</option>
+                <option value="highest">Highest Number</option>
+
+                <option value="ascending">A-Z</option>
+                <option value="descending">Z-A</option>
+              </select>
+            </div>
+          </section>
+
+          <section class="pokemons">
+            <h2>POKEMONS</h2>
+            <div class="loader">
+              <div class="loader__content">
+                <svg
+                  version="1.1"
+                  id="loader-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="90px"
+                  height="90px"
+                  viewBox="0 0 50 50"
+                  style="enable-background: new 0 0 50 50"
+                  xml:space="preserve"
+                >
+                  <path
+                    fill="#000"
+                    d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z"
+                  >
+                    <animateTransform
+                      attributeType="xml"
+                      attributeName="transform"
+                      type="rotate"
+                      from="0 25 25"
+                      to="360 25 25"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <div class="pokemons__content"></div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
